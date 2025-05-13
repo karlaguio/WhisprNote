@@ -1,2 +1,3 @@
 # WhisprNote
-Takes an .mp3 or .wav audio file (like a lecture or meeting).  Transcribes it using Whisper API.  Summarizes it using the OpenAI GPT API.  Outputs a clean note-style summary in Markdown.
+
+WhisprNote is a simple Python app that uses OpenAI's Whisper API to transcribe audio and GPT to summarize it into clean, bullet-point notes.
