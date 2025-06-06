@@ -1,8 +1,9 @@
+#import the libraries
 import openai
 import tempfile
 import whisper
 
-openai.api_key = 'your-openai-api-key'
+openai.api_key = #need to add my key
 
 def transcribe_and_summarize(file):
     # Save to temp file
