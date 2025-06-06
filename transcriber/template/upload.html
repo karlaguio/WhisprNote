@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>WhisprNote</title></head>
+<body>
+  <h1>Upload Audio File</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+  {% if transcript %}
+    <h2>Transcript:</h2>
+    <p>{{ transcript }}</p>
+    <h2>Summary:</h2>
+    <p>{{ summary }}</p>
+  {% endif %}
+</body>
+</html>
