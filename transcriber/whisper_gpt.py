@@ -15,3 +15,10 @@ def transcribe_and_summarize(file):
     model = whisper.load_model("base")
     result = model.transcribe(temp_path)
     transcript = result['text']
+#to summarize
+    summary = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages = [{"role": "user", "content": f"Summarize this: {transcript}"}]
+    )['choices'][0]['message']['content']
+
+    return transcript, summary
