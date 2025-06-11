@@ -1,12 +1,18 @@
-# WhisprNote
+# WhisprNote Web
 
-WhisprNote is a simple Python app that uses OpenAI's Whisper API to transcribe audio and GPT to summarize it into clean, bullet-point notes.
-Currently working on building Django views, forms, and server-rendered HTML templates to display results dynamically
+WhisprNote is a browser-based tool that simulates the process of transcribing and summarizing `.mp3` audio files.
+
+🚀 Built using HTML, CSS, and JavaScript  
+🎯 Live Demo: [karlaguio.github.io/WhisprNote](https://karlaguio.github.io/WhisprNote)
+
+## Features
+- Upload `.mp3` files from your browser
+- Simulate transcription and summarization (API integration coming soon!)
+- Fully static – hosted via GitHub Pages
+
+## Future Work
+- Integrate OpenAI Whisper + GPT-3.5 backend
+- Add Tailwind CSS for improved styling
+- Enable download/export of results
 
 
- ## How to Use
-1. Add your `.mp3` file in the folder.
-2. Add your OpenAI API key in an `.env` file or set it as an environment variable.
-3. Run:
-```bash
-python app.py
