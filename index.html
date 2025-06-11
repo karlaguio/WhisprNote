@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhisprNote</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎙️ WhisprNote</h1>
+  <p>Upload an audio file to get a transcription and summary!</p>
+  <input type="file" id="audioInput" accept=".mp3" />
+  <button onclick="simulateProcessing()">Transcribe</button>
+
+  <div id="output" style="margin-top: 20px;">
+    <h2>Transcript:</h2>
+    <p id="transcript">Waiting...</p>
+
+    <h2>Summary:</h2>
+    <p id="summary">Waiting...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
